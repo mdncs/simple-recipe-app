@@ -1,0 +1,82 @@
+DROP DATABASE
+CREATE DATABASE
+You are now connected to database "recipes" as user "lorelai".
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 4
+ course_id |  name   
+-----------+---------
+         1 | Starter
+         2 | Main
+         3 | Desert
+         4 | Drink
+(4 rows)
+
+INSERT 0 6
+ dishtype_id |   name    
+-------------+-----------
+           1 | Cocktail
+           2 | Pizza
+           3 | Pasta
+           4 | Wine
+           5 | Ice-cream
+           6 | Soup
+(6 rows)
+
+INSERT 0 6
+ dish_id |                          dish_name                          | course_id | dishtype_id 
+---------+-------------------------------------------------------------+-----------+-------------
+       1 | Minestrone                                                  |         1 |           6
+       2 | Veggie Pizza                                                |         2 |           2
+       3 | Spaghetti with Homemade Tomato Sauce, Zucchini and Parmesan |         2 |           3
+       4 | Pistachio Gelato                                            |         3 |           5
+       5 | Pinot Noir                                                  |         4 |           4
+       6 | Mojito                                                      |         4 |           1
+(6 rows)
+
+ dish_id |                          dish_name                          | course_id | dishtype_id 
+---------+-------------------------------------------------------------+-----------+-------------
+       2 | Veggie Pizza                                                |         2 |           2
+       3 | Spaghetti with Homemade Tomato Sauce, Zucchini and Parmesan |         2 |           3
+(2 rows)
+
+INSERT 0 27
+ ingredient_id | ingredient_name 
+---------------+-----------------
+             1 | Olive oil
+             2 | Tomato
+             3 | Potato
+             4 | Garlic
+             5 | Mint
+             6 | Parmesan
+             7 | Ice
+             8 | Basil
+             9 | Pistachios
+            10 | Celery
+            11 | Pesto
+            12 | Lime
+            13 | Wine
+            14 | Mozarella
+            15 | Mushrooms
+            16 | Beans
+            17 | Sugar
+            18 | Pepper
+            19 | Leek
+            20 | Milk
+            21 | Carrots
+            22 | Spiced Rum
+            23 | Courgette
+            24 | Onion
+            25 | Corn
+            26 | Spaghetti
+            27 | Eggs
+(27 rows)
+
+INSERT 0 15
+INSERT 0 68
+INSERT 0 47
