@@ -64,7 +64,8 @@ class AddRecipe extends React.Component {
         })
     }
 
-    handleClick = () => {
+    handleClick = event => {
+        event.preventDefault();
         this.props.submitRecipe(this.state.name, this.state.ingredients, this.state.steps, this.state.imageURL);
         this.setState({
             name: '',

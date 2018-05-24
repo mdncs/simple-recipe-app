@@ -8,12 +8,13 @@ function Recipes ({ recipes }) {
         <ul>
             <br/>
             {recipes.map((recipe, i) => {
-                return <div>
+                return <div className='abcd'>
                     <h2 id='recipeName'>{recipe.name}</h2>
                     <img src={recipe.imageURL} alt=''/>
-                    <h3 className='ingredientsBox'>Ingredients
+                    <div className='recipeBox'>
+                    <h3 id='ingredientsBox'><span className='title'>Ingredients</span>
                         <br/>
-                        <ul>
+                        <ul className='list'>
                         {recipe.ingredients.map((ingredient, i) => {
                             return <li key={i}>
                                 <h5 className='ingredient'>{ingredient}</h5>
@@ -22,9 +23,9 @@ function Recipes ({ recipes }) {
                         </ul>
                     </h3>
                     <br/>
-                    <h3 className='methodsBox'>Methods
+                        <h3 id='methodsBox'><span className='title'>Methods</span>
                         <br/>
-                        <ul>
+                        <ul class='list'>
                             {recipe.steps.map((step, i) => {
                                 return <li key={i}>
                                     <h5 className='method'>{step}</h5>
@@ -32,7 +33,7 @@ function Recipes ({ recipes }) {
                             })}
                         </ul>
                     </h3>
-                    <br/>
+                    </div>
                 </div>
             })}
         </ul>

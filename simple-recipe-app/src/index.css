@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('https://s14-eu5.startpage.com/cgi-bin/serveimage?url=http:%2F%2Fimages.yalantis.com%2Fuploads%2Farticle%2Fimage%2F119%2FRecipe_apps_header.jpg&sp=be4675d9a4dea33af05268d5ba2fc49d');
+  background-image: url('https://s14-eu5.startpage.com/cgi-bin/serveimage?url=https:%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2414%2F1627%2Ffiles%2FKMBan2_1400x.progressive.jpg%3Fv%3D1518597816&sp=4b09860fdbfe6af8043e61f3c5d440c8');
   background-attachment: fixed;
   background-size: 100%;
 }
@@ -14,12 +14,6 @@ body {
   font-size: 45px;
   width: 72%;
   padding-bottom: 10%;
-}
-
-img {
-  width: 35%;
-  height: 35%;
-  border-radius: 15%;
 }
 
 .searchBox {
@@ -68,18 +62,75 @@ img {
   font-family: serif;
 }
 
-.recipe {
-  display: inline-flex;
+#recipeName {
+  display: flex;
   justify-content: center;
-  width: 154%;
+  text-align: center;
+  margin-left: 15%;
+  width: 70%;
+  border: solid crimson 1px;
+  border-radius: 1em;
+  background-color: rgba(250, 235, 215, 0.8);
+  color: crimson;
+  text-decoration-line: underline;
+}
+
+img {
+  margin-left: 30%;
+  width: 40%;
+  height: 40%;
+  border-radius: 10%;
+  border: solid antiquewhite 2px;
+}
+
+.recipe {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
   color: rebeccapurple;
   font-size: 40px;
 }
 
-#recipeName {
+.abcd {
+  border: solid antiquewhite 2px;
+  margin-top: 1em;
+  margin-right: 1em;
+  border-radius: 2em;
+}
+
+.title {
+  border: solid crimson 1px;
+  border-radius: 1em;
+  background-color: rgba(250, 235, 215, 0.8);
+  color: crimson;
+  text-decoration-line: underline;
   display: flex;
   justify-content: center;
-  width: 35%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.recipeBox {
+  display: inline-flex;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  border: solid antiquewhite 1px;
+  border-radius: 1em;
+}
+
+.list {
+  border: solid crimson 1px;
+  border-radius: 1em;
+  background-color: rgba(250, 235, 215, 0.6);
+  color: crimson;
+  padding-left: 1.5em;
+  padding-right: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: serif;
+  min-width: 8.5em;
 }
 
 .addRecipeLabel {

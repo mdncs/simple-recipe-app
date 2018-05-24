@@ -38,7 +38,7 @@ class App extends React.Component {
       name: recipeName,
       ingredients: ingredientsArr,
       steps: stepsArr,
-      imageUrl: imageLink
+      imageURL: imageLink
     };
     this.setState({
       recipes: [...this.state.recipes, newRecipe]
