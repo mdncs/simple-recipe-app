@@ -5,15 +5,13 @@ class SearchByNameOrIngredient extends React.Component {
     render () {
         return <fieldset id='searchFieldset'>
             <div class="searchBox"><br/>
-              <label for="searchBox">Find a recipe by name: </label>
-              <br/>
-              <input type="text" placeholder="Enter recipe name" size="30" onChange={this.props.handleInput} /><br/>
+              <label class='searchLabel' for="searchBox">Find recipe by name:</label>
             </div>
+              <input class='searchInput' type="text" placeholder="Enter recipe name" size="30" onChange={this.props.handleInput} /><br/>
             <div id='searchBoxRight' class="searchBox">
-              <label for="searchBox">Find a recipe by ingredients: </label>
-              <br />
-              <input type="text" placeholder="Enter ingredients separated by comma" size="30" onChange={this.props.handleInput} />
-            </div>
+              <label class='searchLabel' for="searchBox">Find recipe by ingredients: </label>
+          </div>
+          <input class='searchInput' type="text" placeholder="Enter ingredients separated by comma" size="30" onChange={this.props.handleInput} />
           </fieldset>;
     }
 }

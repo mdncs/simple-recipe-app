@@ -8,7 +8,7 @@ function Recipes ({ recipes }) {
         <ul>
             <br/>
             {recipes.map((recipe, i) => {
-                return <div className='abcd'>
+                return <div className='container'>
                     <h2 id='recipeName'>{recipe.name}</h2>
                     <img src={recipe.imageURL} alt=''/>
                     <div className='recipeBox'>

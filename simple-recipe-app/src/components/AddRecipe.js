@@ -11,23 +11,23 @@ class AddRecipe extends React.Component {
     render () {
         return <form id='inputForm'>
             <br/>
-            <h2 class='addRecipeLabel'>Add a recipe:</h2>
+            <h2 class='addRecipeTitle'>Add a recipe:</h2>
             <br/>
             <fieldset id="addRecipeFieldset">
-              <label for="inputBox">Name: </label>
+              <label class='addRecipeLabel' for="inputBox">Name: </label>
               <span class="inputBox">
                 <input type="text" placeholder="Enter recipe name..." size='40' onChange={this.handleName} value={this.state.name} />
               </span>
-              <label for="inputBox">Ingredients: </label>
+                <label class='addRecipeLabel' for="inputBox">Ingredients: </label>
               <span class="inputBox">
-                <input type="text" placeholder="Enter ingredients separated by comma..." size='40' onChange={this.handleIngredients} value={this.state.input} />
+                <input type="text" placeholder="Enter ingredients separated by semi-colon..." size='40' onChange={this.handleIngredients} value={this.state.input} />
               </span>
               <br/>
-              <label for="inputBox">Steps: </label>
+                <label class='addRecipeLabel' for="inputBox">Steps: </label>
               <span class="inputBox">
-                <input type="text" placeholder="Enter steps separated by comma..." size='40' onChange={this.handleSteps} value={this.state.input} />
+                <input type="text" placeholder="Enter steps separated by semi-colon..." size='40' onChange={this.handleSteps} value={this.state.input} />
               </span>
-              <label for="inputBox">Image URL: </label>
+                <label class='addRecipeLabel' for="inputBox">Image URL: </label>
               <span class="inputBox">
                 <input type="text" placeholder="Paste image URL here..." size='40' onChange={this.handleURL} value={this.state.input} />
               </span>
@@ -45,14 +45,14 @@ class AddRecipe extends React.Component {
     } 
     
     handleIngredients = event => {
-        const ingredientsArr = event.target.value.split(',');
+        const ingredientsArr = event.target.value.split(';');
         this.setState({
             ingredients: ingredientsArr
         })
     }
 
     handleSteps = event => {
-        const stepsArr = event.target.value.split(',');
+        const stepsArr = event.target.value.split(';');
         this.setState({
             steps: stepsArr
         })
